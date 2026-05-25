@@ -1,5 +1,5 @@
-# Context — dlockamy/bitchain-studio
-# Lockamy Studios · LS project
+# Context — clusterzer0/bitchain-studio
+# clusterzer0 · CLUS project
 
 **What it is:** GUI desktop and mobile application for browsing and managing
 bitchain artifact bundles. Companion app to the `bitchain` CLI.
@@ -8,8 +8,8 @@ bitchain artifact bundles. Companion app to the `bitchain` CLI.
 package, or Tauri + Rust for desktop-first).
 
 **Depends on:**
-- `dlockamy/bitchain` — CLI and data model
-- `dlockamy/refraction` — server API (if remote manifest storage is needed)
+- `clusterzer0/bitchain` — CLI and data model
+- `clusterzer0/refraction` — server API (if remote manifest storage is needed)
 - `lockamy-studios/digital-zen` — UI design system
 
 **Planned features:**
