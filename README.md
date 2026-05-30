@@ -1,34 +1,27 @@
 # bitchain-studio
 
-A standalone desktop and mobile GUI for creating and managing [bitchain](https://github.com/dlockamy/bitchain) bundles.
+> **Retired 2026-05.** This product has been dissolved into **Quickring Courier** (QR-20).
 
-`bitchain-studio` puts a visual interface over the `bitchain` CLI — browse your files, configure block storage backends, inspect manifests, and rebuild assets without touching the command line. Designed for artists, designers, and content creators who need reliable binary asset versioning without learning Rust or S3 tooling.
+bitchain-studio was originally planned as a standalone desktop and mobile GUI for creating and managing [bitchain](https://github.com/clusterzer0/bitchain) bundles — a visual interface over the bitchain CLI for non-technical users.
 
-## Status
+The capabilities that bitchain-studio was meant to deliver (visual file browser, storage backend configuration, manifest inspection, bundle history) are now part of **Quickring Courier**, the consumer file-sharing app under the Quickring brand. Courier ships these capabilities in the context of family-coordination file sharing rather than as a standalone bitchain tool — which is the right framing for a consumer-facing surface.
 
-🚧 **In development** — see [KAN-81](https://fairmerce.atlassian.net/browse/KAN-81) for planning status.
+## Where it went
 
-## Relationship to bitchain
+| Originally planned in bitchain-studio | Now in |
+|---|---|
+| Visual file browser for ingesting files into bundles | Quickring Courier (QR-20) |
+| Storage backend configuration (S3, HTTP, local) | Refraction (CLUS-2) for enterprise; Cumulus's local block store (DEV-30) for households |
+| Manifest inspector | Quickring Courier + Refraction's web UI |
+| Cross-platform desktop / mobile | Flutter, via Quickring Courier |
 
-| Tool | Audience | Interface |
-|---|---|---|
-| [bitchain](https://github.com/dlockamy/bitchain) | Developers | CLI |
-| **bitchain-studio** | Everyone | Desktop / Mobile |
-| [refraction](https://github.com/dlockamy/refraction) | Enterprise teams | Self-hosted SaaS |
+## References
 
-## Planned Features
-
-- Visual file browser for ingesting files and directories into bitchain bundles
-- Storage backend configuration (S3, HTTP, local) via a guided setup UI
-- Manifest inspector — browse blocks, URIs, and hashes in a structured view
-- One-click rebuild from any manifest file
-- Bundle history and diff view
-- Cross-platform: macOS, Windows, Linux, iOS, Android
-
-## Development
-
-See [bitchain](https://github.com/dlockamy/bitchain) for the core CLI that powers this application.
+- **Quickring Courier** — `quickring/courier`, Jira epic QR-20
+- **bitchain CLI** — `clusterzer0/bitchain`, the canonical CLI surface that remains
+- **Refraction** — `clusterzer0/refraction`, the enterprise web surface for bitchain
+- `softsurve/sol/weekly/2026-05-clusterzer0-quickring-review.md` — the May-2026 record explaining the dissolution
 
 ## License
 
-TBD
+N/A — retired before active code shipped.
